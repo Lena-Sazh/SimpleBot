@@ -7,3 +7,13 @@ ___
 
 <code><img height="50" title="Kotlin" src="https://github.com/Lena-Sazh/Lena-Sazh/blob/main/src/test/resources/logo/Kotlin.png"></code>
 <code><img height="50" title="Gradle" src="https://github.com/Lena-Sazh/Lena-Sazh/blob/main/src/test/resources/logo/Gradle.svg"></code>
+___
+
+### :robot: Features
+
+The Bot can:
+* greet you
+* ask for your name
+* guess your age
+* simple counting
+* test you :smile:
