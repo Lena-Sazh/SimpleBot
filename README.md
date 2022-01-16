@@ -13,7 +13,7 @@ ___
 
 The Bot can:
 * greet you
-* ask for your name
+* ask your name
 * guess your age
 * simple counting
 * test you :smile:
