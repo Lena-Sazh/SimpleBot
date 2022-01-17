@@ -2,7 +2,7 @@ import java.util.*
 
 class Bot {
 
-    val scanner = Scanner(System.`in`)
+    private val scanner = Scanner(System.`in`)
     val name = "Aider"
     val birthYear = "2022"
 
@@ -18,17 +18,17 @@ class Bot {
     private fun greet(assistantName: String, birthYear: String) {
         println("Hello! My name is ${assistantName}.")
         println("I was created in ${birthYear}.")
-        println("Please, remind me your name.")
     }
 
     private fun remindName() {
+        println("Please, remind me your name:")
         val name = scanner.nextLine()
         println("What a great name you have, ${name}!")
     }
 
     private fun guessAge() {
         println("Let me guess your age.")
-        println("Enter remainders of dividing your age by 3, 5 and 7.")
+        println("Enter remainders of dividing your age by 3, 5 and 7:")
         val rem3 = scanner.nextInt()
         val rem5 = scanner.nextInt()
         val rem7 = scanner.nextInt()
@@ -38,6 +38,7 @@ class Bot {
 
     private fun count() {
         println("Now I will prove to you that I can count to any number you want.")
+        println("Enter any positive number:")
         val num = scanner.nextInt()
         for (i in 0..num) {
             print(i)
@@ -52,6 +53,7 @@ class Bot {
         println("2. To decompose a program into several small subroutines.")
         println("3. To determine the execution time of a program.")
         println("4. To interrupt the execution of a program.")
+        println("Enter the number of option you choose:")
 
         val answer = scanner.nextInt()
         if (answer != 2) {
