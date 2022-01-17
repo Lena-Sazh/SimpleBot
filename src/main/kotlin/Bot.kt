@@ -3,11 +3,11 @@ import java.util.*
 class Bot {
 
     private val scanner = Scanner(System.`in`)
-    val name = "Aider"
-    val birthYear = "2022"
+    private val assistantName = "Aider"
+    private val birthYear = "2022"
 
     fun main() {
-        greet(name, birthYear)
+        greet()
         remindName()
         guessAge()
         count()
@@ -15,15 +15,15 @@ class Bot {
         end()
     }
 
-    private fun greet(assistantName: String, birthYear: String) {
-        println("Hello! My name is ${assistantName}.")
-        println("I was created in ${birthYear}.")
+    private fun greet() {
+        println("Hello! My name is $assistantName.")
+        println("I was created in $birthYear.")
     }
 
     private fun remindName() {
         println("Please, remind me your name:")
         val name = scanner.nextLine()
-        println("What a great name you have, ${name}!")
+        println("What a great name you have, $name!")
     }
 
     private fun guessAge() {
@@ -33,7 +33,7 @@ class Bot {
         val rem5 = scanner.nextInt()
         val rem7 = scanner.nextInt()
         val age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
-        println("Your age is ${age}. That's a good time to start programming!")
+        println("Your age is $age. That's a good time to start programming!")
     }
 
     private fun count() {
